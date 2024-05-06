@@ -111,12 +111,14 @@
           
 
             <div class="code-button">
-                <button id="filePathButton" onclick="changeFilePath('CodeText/Program.cs', 'fileViewer')">Load Program.cs</button>
-                <button id="filePathButton" onclick="changeFilePath('CodeText/Instruction.cs' , 'fileViewer')">Load Instruction.cs</button>
+                <button id="filePathButton" onclick="displayCode('CodeText/Program.cs', 'fileViewer')">Load Program.cs</button>
+                <button id="filePathButton" onclick="displayCode('CodeText/Instruction.cs', 'fileViewer')">Load Instruction.cs</button>
                 <a href="Download/PasswordGenerator.exe" download="PasswordGenerator.exe">Download exe file (windows)</a>
             </div>
 
-            <iframe id="fileViewer" title="iframe code example" frameborder="0" width="100%" height="300"></iframe>
+            <code id="fileViewer" title="code example" frameborder="0" width="100%" height="300">
+
+            </code>
             <!-- Content about the selected card goes here -->
         </section>
 

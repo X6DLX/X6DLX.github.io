@@ -1,8 +1,8 @@
 
 /* Changes what file is shown*/
-function changeFilePath(filePath, iframeLocation) {
-    var iframe = document.getElementById(iframeLocation);
-    iframe.src = filePath;
+function displayCode(filePath, textLocation) {
+    var text = document.getElementById(textLocation);
+    fetch(filePath).then(f => f.text().then(t => text.innerText = t));
 }
 
 
