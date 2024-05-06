@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="cv-title">
+        <h1>cv</h1>
+    </div>
+
+    <button id="toggleBackground">
+        <span class="material-symbols-outlined">dark_mode</span>
+    </button>
+
+
+
+
+
+    <div class="container">
+        <div class="item" onclick="scrollToMoreInfo('info-section-1')">
+            <span class="material-symbols-outlined">school</span>
+            <h2>Education</h2>
+            <h3>Here i will talk about what education i have.</h3>
+        </div>
+        <div class="item" onclick="scrollToMoreInfo('info-section-2')">
+            <span class="material-symbols-outlined">receipt_long</span>
+            <h2>Experience</h2>
+            <h3>Personal experiences and areas of knowledge.</h3>
+        </div>
+        <div class="item" onclick="scrollToMoreInfo('info-section-3')">
+            <span class="material-symbols-outlined">inventory_2</span>
+            <h2>Portfolio</h2>
+            <h3>A glimpse of what work and project that i have done.</h3>
+        </div>
+        <div class="item" onclick="scrollToMoreInfo('info-section-4')">
+            <span class="material-symbols-outlined">call</span>
+            <h2>Contact Me</h2>
+            <h3>How you can contact me.</h3>
+        </div>
+    </div>
+
+
+
+    <div class="information">
+        <section id="info-section-1">
+            <h2>Education</h2>
+            <article>I'm in my third and final year of technical studies. I will take the exam in June 2024. During my studies, I have devoted a lot of time to programming, which I enjoy. I did my thesis on "how to develop a video game".</article>
+            <!-- Content about the selected card goes here -->
+        </section>
+
+        <section id="info-section-2">
+            <h2>Experience</h2>
+            <article>I have programming experience in C#, JavaScript, C++, HTML, CSS and I also have a lot of experience with Blender, a powerful 3D modeling software.</article>
+            <img src="Fotos/c-sharp-c-icon-1822x2048-wuf3ijab.png" alt="Icon of C#">
+            <img src="Fotos/cpp_logo.png" alt="Icon of C++">
+            <img src="Fotos/vecteezy_javascript-logo-png-javascript-icon-transparent-png_27127463.png"
+                alt="Icon of javaScript">
+            <img src="Fotos/HTML_v2.png" alt="Icon of HTML">
+            <img src="Fotos/css-icon.png" alt="Icon of css">
+            <img src="Fotos/blender_community_badge_orange.png" alt="Icon of blender">
+            <!-- Content about the selected card goes here -->
+        </section>
+
+        <section id="info-section-3">
+            <h2>Portfolio</h2>
+            <h3>Blender</h3>
+
+            <div class="blender">
+                <div class="blender-image">
+                    <img src="Fotos//candlestick.png" alt="Image of a candlestick">
+                    <img src="Fotos/Earth_V1.png" alt="Image of the Earth_V1">
+                    <img src="Fotos/Earth_V2_Vertical.png" alt="Image of the Earth_V2_Vertical">
+                    <img src="Fotos/Alien_Baby_v2.png" alt="Image of Alien_Baby_v2">
+                    <img src="Fotos/Grass.png" alt="Image of grass">
+                    <img src="Fotos/GrassCube.png" alt="Image of a cube width grass around it">
+                    <img src="Fotos/Metal_Card_v1.png" alt="Image of a metal card">
+                    <img src="Fotos/Urna.png" alt="Image of a urna">
+                    <img src="Fotos/well.png" alt="Image of a well">
+                    <img src="Fotos/Incet_Face_v0.2.png" alt="insect">
+                    <img src="Fotos/Earth_V1_UltraWide_HighResolution.png" alt="Image of Earth_V1_UltraWide_HighResolution">
+                    <img src="Fotos/bottle high quality.png" alt="Image of a glass bottle">
+                </div>
+    
+                <div class="blender-video">
+                    <video controls loop>
+                        <source src="Videos/3 Final Animation0001-0300-.mp4" type="video/mp4">
+                    </video>
+    
+                    <video controls loop>
+                        <source src="Videos/3 Final Animation0001-0300.mp4" type="video/mp4">
+                    </video>
+    
+                    <video controls loop>
+                        <source src="Videos/0001-0600.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <h3>Code</h3>
+          
+
+            <div class="code-button">
+                <button id="filePathButton" onclick="changeFilePath('CodeText/Program.cs', 'fileViewer')">Load Program.cs</button>
+                <button id="filePathButton" onclick="changeFilePath('CodeText/Instruction.cs' , 'fileViewer')">Load Instruction.cs</button>
+                <a href="Download/PasswordGenerator.exe" download="PasswordGenerator.exe">Download exe file (windows)</a>
+            </div>
+
+            <iframe id="fileViewer" title="iframe code example" frameborder="0" width="100%" height="300"></iframe>
+            <!-- Content about the selected card goes here -->
+        </section>
+
+        <section id="info-section-4">
+            <h2>Contact Information</h2>
+            <ul>
+                <li>Email: <a href="mailto:qwesda@gmail.com">qwesda23sda@gmail.com</a></li>
+            </ul>
+            <aside>
+                <p>Feel free to reach out to me through the method above.</p>
+            </aside>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2024 Philip. All personal images, code, and text on this website are copyrighted material. Unauthorized use for sale, or marketing purposes is prohibited. All rights reserved. Additionally, web scraping and unauthorized collection of data from this website are strictly prohibited. Violation of these terms may result in legal action.</p>
+    </footer>
+
+    <script src="JavaScript/scripts.js"></script>
+</body>
+
+</html>

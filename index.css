@@ -1,0 +1,204 @@
+/* CSS for positioning the elements */
+
+/* Base styles */
+body {
+    display: flex; /* Display flex container */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align elements at the start of the container */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; /* Remove default margin */
+    font-family: 'Roboto', sans-serif;
+    background-color: white; /* Dark background color */
+}
+
+#toggleBackground {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background: transparent;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* Style for the "csv" title */
+.cv-title {
+    position: absolute; /* Position the title absolutely */
+    top: 0px; /* Set distance from top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    z-index: 1000; /* Ensure the title stays above other elements */
+}
+
+.cv-title h1 {
+    font-size: 36px; /* Set font size for the title */
+    font-weight: bold;
+    margin: 20px;
+}
+
+
+
+
+
+/* Container */
+.container {
+    display: flex; /* Display flex container */
+    flex-direction: row; /* Align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: stretch; /* Ensure items have equal height */
+    flex-wrap: wrap; /* Allow items to wrap onto new lines */
+    margin-top: 100px; /* Adjust the top margin as needed */
+}
+
+
+/* Item */
+.item {
+    width: 200px; /* Fixed width */
+    padding: 10px; /* Add padding */
+    margin: 10px; /* Add margin */
+    border-radius: 15px;/* Apply border radius */
+    background-color: #111; /* Background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Change cursor to indicate clickability */
+    transition: box-shadow 0.3s ease; /* Add a transition fr smooth animation */
+}
+
+.item:hover {
+    box-shadow: 0 0 40px #3700B3;
+}
+
+.item h2 {
+    margin-block: 0px; /* Add some spacing between elements */
+    font-size: 30px; /* Adjust based on your design */
+    font-weight: 600; /* Adjust based on your design */
+}
+
+.item h3 {
+    margin-block: 0px; /* Add some spacing between elements */
+    font-family: 'Nunito', sans-serif; /* For subheadings */
+    font-size: 16px; /* Adjust based on your design */
+    font-weight: 400; /* Adjust based on your design */
+    margin-top: 0; /* Remove any default margin at the top */
+}
+
+
+
+
+
+/* Information*/
+.information {
+    margin-inline: 10vw;
+    margin-top: 100px; /* Adjust the top margin as needed */
+    color: black;
+    flex-direction: column; /* Align items horizontally */
+}
+
+/*Information Section */
+.information section {
+    margin-bottom: 20px;
+}
+
+.information section h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 30px; /* Adjust based on your design */
+    font-weight: 600; /* Adjust based on your design */
+}
+
+.information section h3 {
+    font-family: 'Nunito', sans-serif; /* For subheadings */
+    font-size: 16px; /* Adjust based on your design */
+    font-weight: 400; /* Adjust based on your design */
+    margin-block: 0px; 
+}
+
+.information section h4 {
+    margin-block: 0px;
+}
+
+.information section article {
+    font-family: 'Nunito', sans-serif; 
+    font-size: 16px;
+}
+
+.information section ul, p {
+    font-family: 'Nunito', sans-serif; /* For subheadings */
+    font-size: 16px; /* Adjust based on your design */
+    font-weight: 400; /* Adjust based on your design */
+    margin-block: 0px;
+}
+
+
+
+/* Video and img*/
+video {
+    width: auto;
+    height: 400px;
+}
+
+.information img{
+    width: auto;
+}
+
+#info-section-2 img{
+    height: 36px;
+}
+
+
+/* Section 3 */
+#info-section-3 img{
+    height: 20vh;
+}
+
+.blender {
+    margin-bottom: 20px;
+}
+
+.code-button {
+    margin-bottom: 5px;
+}
+
+.code-button a {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+
+
+
+
+
+/* Button design */
+#filePathButton {
+background-color: #111;
+color: white;
+padding: 5px 10px;
+cursor: pointer;
+text-align: center;
+border: none;
+border-radius: 5px;
+}
+
+iframe {
+background-color: green;
+}
+   
+
+
+/* Footer (Copyright) */
+footer {
+    width: 100%;
+    padding-block: 20px;
+    background-color: #111;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    
+}
+
+footer p {
+    margin-inline: 20px;
+}
+
