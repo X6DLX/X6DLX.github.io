@@ -1,15 +1,13 @@
-/* CSS for positioning the elements */
-
 /* Base styles */
 body {
-    display: flex; /* Display flex container */
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: flex-start; /* Align elements at the start of the container */
-    align-items: center; /* Center items horizontally */
-    height: 100vh; /* Full height of the viewport */
-    margin: 0; /* Remove default margin */
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
     font-family: 'Roboto', sans-serif;
-    background-color: white; /* Dark background color */
+    background-color: white;
 }
 
 #toggleBackground {
@@ -24,15 +22,15 @@ body {
 
 /* Style for the "csv" title */
 .cv-title {
-    position: absolute; /* Position the title absolutely */
-    top: 0px; /* Set distance from top */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    z-index: 1000; /* Ensure the title stays above other elements */
+    position: absolute;
+    top: 0px;
+    left: 50%; 
+    transform: translateX(-50%);
+    z-index: 1000;
 }
 
 .cv-title h1 {
-    font-size: 36px; /* Set font size for the title */
+    font-size: 36px;
     font-weight: bold;
     margin: 20px;
 }
@@ -43,25 +41,25 @@ body {
 
 /* Container */
 .container {
-    display: flex; /* Display flex container */
-    flex-direction: row; /* Align items horizontally */
-    justify-content: center; /* Center items horizontally */
-    align-items: stretch; /* Ensure items have equal height */
-    flex-wrap: wrap; /* Allow items to wrap onto new lines */
-    margin-top: 100px; /* Adjust the top margin as needed */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch; 
+    flex-wrap: wrap; 
+    margin-top: 100px; 
 }
 
 
 /* Item */
 .item {
-    width: 200px; /* Fixed width */
-    padding: 10px; /* Add padding */
-    margin: 10px; /* Add margin */
-    border-radius: 15px;/* Apply border radius */
-    background-color: #111; /* Background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Change cursor to indicate clickability */
-    transition: box-shadow 0.3s ease; /* Add a transition fr smooth animation */
+    width: 200px; 
+    padding: 10px; 
+    margin: 10px; 
+    border-radius: 15px;
+    background-color: #111; 
+    color: white;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease; 
 }
 
 .item:hover {
@@ -69,17 +67,17 @@ body {
 }
 
 .item h2 {
-    margin-block: 0px; /* Add some spacing between elements */
-    font-size: 30px; /* Adjust based on your design */
-    font-weight: 600; /* Adjust based on your design */
+    margin-block: 0px;
+    font-size: 30px;
+    font-weight: 600; 
 }
 
 .item h3 {
-    margin-block: 0px; /* Add some spacing between elements */
-    font-family: 'Nunito', sans-serif; /* For subheadings */
-    font-size: 16px; /* Adjust based on your design */
-    font-weight: 400; /* Adjust based on your design */
-    margin-top: 0; /* Remove any default margin at the top */
+    margin-block: 0px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
 }
 
 
@@ -89,9 +87,9 @@ body {
 /* Information*/
 .information {
     margin-inline: 10vw;
-    margin-top: 100px; /* Adjust the top margin as needed */
+    margin-top: 100px;
     color: black;
-    flex-direction: column; /* Align items horizontally */
+    flex-direction: column;
 }
 
 /*Information Section */
@@ -102,14 +100,14 @@ body {
 .information section h2 {
     margin-top: 0px;
     margin-bottom: 0px;
-    font-size: 30px; /* Adjust based on your design */
-    font-weight: 600; /* Adjust based on your design */
+    font-size: 30px;
+    font-weight: 600;
 }
 
 .information section h3 {
-    font-family: 'Nunito', sans-serif; /* For subheadings */
-    font-size: 16px; /* Adjust based on your design */
-    font-weight: 400; /* Adjust based on your design */
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     margin-block: 0px; 
 }
 
@@ -123,9 +121,9 @@ body {
 }
 
 .information section ul, p {
-    font-family: 'Nunito', sans-serif; /* For subheadings */
-    font-size: 16px; /* Adjust based on your design */
-    font-weight: 400; /* Adjust based on your design */
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     margin-block: 0px;
 }
 
