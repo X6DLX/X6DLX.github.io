@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // Background color, and font color
 document.addEventListener('DOMContentLoaded', function () {
     const toggleButton = document.getElementById('toggleBackground');
-    let isWhite = false; // Initial background color is black
+    let isWhite = true; // Initial background color is white
     const initiallyBlackElements = []; // Array to store initially black elements
 
     // Function to check if an element's color is black
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     toggleButton.addEventListener('click', function () {
-        if (isWhite) {
+        if (isWhite === true) {
             document.body.style.backgroundColor = 'black';
             initiallyBlackElements.forEach(el => el.style.color = 'white');
             isWhite = false;
